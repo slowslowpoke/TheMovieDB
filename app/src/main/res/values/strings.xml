@@ -5,4 +5,8 @@
     <string name="search">Search</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="no_internet">No internet</string>
+    <string name="bad_response_from_server">Bad response from server</string>
+    <string name="no_matches_found_check_for_typos">No matches found. Check for typos.</string>
+    <string name="matches_found">Matches found: %1$s</string>
 </resources>

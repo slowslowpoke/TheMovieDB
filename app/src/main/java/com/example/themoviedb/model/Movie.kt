@@ -1,6 +1,4 @@
-package com.example.themoviedb.data
-
-import com.google.gson.annotations.SerializedName
+package com.example.themoviedb.model
 
 data class Movie(
 

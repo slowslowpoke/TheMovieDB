@@ -1,18 +1,20 @@
-package com.example.themoviedb
+package com.example.themoviedb.adapters
 
-import android.content.Context
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import coil.load
 import coil.transform.RoundedCornersTransformation
-import com.example.themoviedb.data.Movie
+import com.example.themoviedb.R
 import com.example.themoviedb.databinding.MovieListItemBinding
+import com.example.themoviedb.model.Movie
 import com.example.themoviedb.retrofit.RetrofitInstance
 
-class MovieRVAdapter(private val moviesList: List<Movie>) :
-    RecyclerView.Adapter<MovieRVAdapter.MovieViewHolder>() {
+class MoviesAdapter(var moviesList: List<Movie>) :
+    RecyclerView.Adapter<MoviesAdapter.MovieViewHolder>() {
+
+    private val TAG = "MoviesAdapter"
 
     inner class MovieViewHolder(val binding: MovieListItemBinding) :
         RecyclerView.ViewHolder(binding.root) {
@@ -30,7 +32,7 @@ class MovieRVAdapter(private val moviesList: List<Movie>) :
 
     override fun getItemCount() = moviesList.size
 
-    override fun onBindViewHolder(holder: MovieRVAdapter.MovieViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: MovieViewHolder, position: Int) {
         holder.binding.apply {
             val movie = moviesList[position]
             tvMovieTitle.text = movie.original_title
