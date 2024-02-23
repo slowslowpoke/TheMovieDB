@@ -12,4 +12,5 @@
     <string name="release_date">Release Date: %1$s</string>
     <string name="vote_average">Vote Average: %1$.2f</string>
     <string name="movie_overview">\t A long time ago, in a galaxy far, far away… It is a period of civil war. Rebel spaceships, striking from a hidden base, have won their first victory against the evil Galactic Empire. During the battle, Rebel spies managed to steal secret plans to the Empire ultimate weapon, the Death Star, an armored space station with enough power to destroy an entire planet.</string>
+    <string name="network_error_check_your_connection">Network error. Check your connection</string>
 </resources>

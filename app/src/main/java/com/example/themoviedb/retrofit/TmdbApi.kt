@@ -7,9 +7,9 @@ import retrofit2.http.Query
 
 interface TmdbApi {
     @GET ("3/search/movie")
-    suspend fun getMoviesList(
+    suspend fun getQueryResponse(
         @Query("query") query: String,
-        @Query("api_key") apiKey: String
+        @Query("api_key") apiKey: String = RetrofitInstance.API_KEY
     ): Response<QueryResponse>
 
 }
