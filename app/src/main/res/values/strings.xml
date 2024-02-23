@@ -9,4 +9,7 @@
     <string name="bad_response_from_server">Bad response from server</string>
     <string name="no_matches_found_check_for_typos">No matches found. Check for typos.</string>
     <string name="matches_found">Matches found: %1$s</string>
+    <string name="release_date">Release Date: %1$s</string>
+    <string name="vote_average">Vote Average: %1$.2f</string>
+    <string name="movie_overview">\t A long time ago, in a galaxy far, far away… It is a period of civil war. Rebel spaceships, striking from a hidden base, have won their first victory against the evil Galactic Empire. During the battle, Rebel spies managed to steal secret plans to the Empire ultimate weapon, the Death Star, an armored space station with enough power to destroy an entire planet.</string>
 </resources>

@@ -12,9 +12,6 @@ interface TmdbApi {
         @Query("api_key") apiKey: String
     ): Response<QueryResponse>
 
-
-    @GET ("t/p/original")
-    suspend fun getMoviePoster()
 }
 
 

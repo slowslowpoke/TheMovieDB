@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        tools:context=".ui.MovieDetailsFragment">
+
+
+        <ImageView
+            android:id="@+id/ivBackdrop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@drawable/lebowski" />
+
+        <TextView
+            android:id="@+id/tvMovieTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ivBackdrop"
+            tools:text="Movie title" />
+
+
+        <TextView
+            android:id="@+id/tvMovieOverview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:justificationMode="inter_word"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvMovieTitle"
+            tools:text="@string/movie_overview" />
+
+        <TextView
+            android:id="@+id/tvReleaseDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"
+            android:justificationMode="inter_word"
+            android:text="Release date: August 24th, 1999"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/tvMovieOverview"
+            app:layout_constraintTop_toBottomOf="@id/tvMovieOverview" />
+
+        <TextView
+            android:id="@+id/tvVoteAverage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"
+            android:justificationMode="inter_word"
+            android:text="Vote average: 10.0"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/tvMovieOverview"
+            app:layout_constraintTop_toBottomOf="@id/tvReleaseDate"
+
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
